@@ -3,6 +3,9 @@ A software engineering project regarding solid waste management and encouraging 
 
 # Blogs regarding the project development
 https://akash-hexagineers.blogspot.com/
+
 http://megana-hexagineers.blogspot.in
+
 http://daittanhexagineers.wordpress.com
+
 https://mjvns.wordpress.com/
