@@ -9,3 +9,5 @@ http://megana-hexagineers.blogspot.in
 http://daittanhexagineers.wordpress.com
 
 https://mjvns.wordpress.com/
+
+http://anil-hexagineers.blogspot.in/
