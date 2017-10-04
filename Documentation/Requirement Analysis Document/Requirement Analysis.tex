@@ -1,0 +1,137 @@
+%Format: Latex
+\documentclass{article}
+\setcounter{secnumdepth}{5}
+\setlength{\textwidth}{17cm}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-1.5cm}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{times}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{tabulary}
+\usepackage{pgfgantt}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\usepackage{verbatim}
+\usetikzlibrary{arrows,shapes}
+\usepackage{adjustbox}
+\usepackage{forest}
+\usepackage{tikz-qtree}
+\usepackage{soul}
+\pagestyle{fancy}
+\rhead{CSE\hspace{\labelsep}\textbullet\hspace{\labelsep} Autumn 2017}
+\lhead{\textbf{CS302} Software Engineering}
+\cfoot{\thepage}
+\usepackage{indentfirst}
+ \usepackage{graphicx}
+\graphicspath{ {Images/} }
+\setcounter{tocdepth}{5} 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+}
+\title{\textbf{CS302}\\\HUGE Software Engineering\\
+\LARGE CSE\hspace{\labelsep}\textbullet\hspace{\labelsep} Autumn 2017
+}
+
+\author{Hexagineers}
+
+
+
+\begin{document}
+\maketitle
+\line(1,0){450}
+
+\begin{center}
+\textbf{\Huge Lorem Ipsum Dolor\\\Large Requirement Analysis}
+
+\end{center}
+\newpage
+\tableofcontents
+\newpage
+\section{Preface}
+\par The purpose of this document is understand the key requirements of various stakeholders involved. We rolled survey forms, conducted interviews and met the stake holders in order to understand the current scenario and their requirements. 
+\newpage
+\section{Introduction}
+\par Lorem Ipsum Dolor is a project idea where we are trying to manage dry waste by collecting it from people and giving recycled, finished products back to the people. This is a concept we came up with where we believe that the goods could be efficiently recycled to give back to people various finished products. 
+Apart from this, we also plan on providing know-how videos on how to reuse certain waste items available at home to make something productive.
+
+\section{Market Research}
+\par Lorem Ipsum Dolor is a pretty innovative concept. Although there are some companies which work in this field of dry waste management with similiar objective as ours. However, the domain of these companies are limited to just a specific type of dry waste.
+We, on the other hand, are working on recycling all kinds of dry waste that has high convertability. 
+
+\subsection{The Stakeholders}
+\par The stakeholders involved are:
+\begin{itemize}
+    \item We, the project managers;
+    \item People;
+    \item Kabadiwalas; and
+    \item Recycling Industries.
+\end{itemize}
+
+\par To know the expectations from the stakeholders, we decided to conduct surveys for the direct stakeholders, i.e, the people, the kabadiwalas and the recycling industries.
+
+\subsubsection{People}
+\par  We circulated Google Forms to all our contacts via the social networks and asked them to fill the form and also to share them with their associates. The response was pretty good. We received 191 responses from diverse states, age groups and work backgrounds. The survey details are as follows:
+ results.
+\begin{itemize}
+    \item Gender\\
+    \includegraphics[scale=0.6]{Gender.png}
+    \item Which State/UT do you belong to?\\
+    \includegraphics[scale=0.75]{State.png}
+    \item Please mark your age group.\\
+    \includegraphics[scale=0.75]{Agegroup.png}
+    \newpage
+    \item How many people currently live in your house?\\
+    \includegraphics[scale=0.75]{People.png}
+    \item What is your major occupation?\\
+    \includegraphics[scale=0.75]{Occupation.png}
+    \item What type of solid waste do you mostly generate in your home or office/workspace? (Check one or more options)\\
+    \includegraphics[scale=0.6]{wastegenerated.png}
+    \item Do you practice the concept of Reuse, Recycle and Regenerate?\\
+    \includegraphics[scale=0.75]{3R.png}
+    \item Have you heard of Solid Waste Recycling?\\
+    \includegraphics[scale=0.6]{Heard.png}
+    \item Do you sell waste products to scrap dealer (Kabadiwaala)?\\
+    \includegraphics[scale=0.6]{Kabadiwala.png}
+    \newpage
+    \item Approximately, how many kilograms of solid waste do you sell to the Scrap Dealer in a month?\\
+    \includegraphics[scale=0.6]{KG.png}
+    \item Do you buy products from an e-commerce store?\\
+    \includegraphics[scale=0.6]{Ecommerce.png}
+    \item Would you be interested in buying in recycled products online?\\
+    \includegraphics[scale=0.6]{Buying.png}
+    \newpage
+    \item Would you be interested in earning points/credits through your dry waste for redemption on various e-commerce and payment platforms?\\
+    \includegraphics[scale=0.6]{Points.png}
+\end{itemize}
+\par The survey results indicate that majority of the people are interested in this concept. People are interested to exchange their solid waste in exchange for points, which they can redeem on the online e-commerce store.
+
+\subsubsection{Kabadiwalas}
+\par  In our visit to the Scrap dealers place at Pethapur, Gandhinagar, we gathered information regarding the various types of scrap that is collected by them and what they do to the scrap later on.
+
+\par Our first stop was at a Scrap dealer dealing with plastic items only. He would get the scrap from several small scrap collectors that collect scrap from homes. The scrap would then be segregated there. The recycling industries from Ahmedabad would collect the scrap from time to time via trucks.
+
+\par The next scrap dealer we met dealt with the rubber scraps. He would mainly collect it from the Vehicle repair shops nearby. The scrap is sent to Ahmedabad based industries where the rubber is recycled to extract the oil from it. The average transaction is around 200-300kg/month.
+\par Our next visit was to a scrap collector who himself collects from homes and sells the scrap to those in need. He doesn't give the collection to a bigger Scrap Dealer. He seemed very interested in our app idea and felt it would be actually easier to collect scrap via customer requests on mobile.
+\par Our final stop was at a scrap dealer dealing with the glass products. He generally collects the scrap from local shops and vendors for around Rs.1.5 - Rs.2 per bottle. He sells the scrap to both industries and retailers. He too felt good about the app idea and wished us luck in achieving our goals.
+
+\subsubsection{Recycling Industries}
+
+
+
+\section{Conclusion}
+\par Considering the survey results and our interaction with kabadiwalas and the industries, we realized that the general public is in favor of the idea where they could buy back recycled goods in exchange for points that they would earn by giving away their solid waste. Even the kabadiwalas were interested, if they are proivded with technology that will make their lives easier.
+
+\end{document}
