@@ -1,4 +1,3 @@
-%Format: Latex
 \documentclass{article}
 \setcounter{secnumdepth}{5}
 \setlength{\textwidth}{17cm}
@@ -19,7 +18,8 @@
 \usetikzlibrary{shapes.geometric, arrows}
 
 \tikzstyle{arrow} = [thick,->,>=stealth]
-
+ \usepackage{graphicx}
+\graphicspath{ {Images/} }
 \usepackage{verbatim}
 \usetikzlibrary{arrows,shapes}
 \usepackage{adjustbox}
@@ -41,11 +41,12 @@
     filecolor=blue,      
     urlcolor=blue,
 }
+
 \title{\textbf{CS302}\\\HUGE Software Engineering\\
 \LARGE CSE\hspace{\labelsep}\textbullet\hspace{\labelsep} Autumn 2017
 }
 
-\author{Hexagineers}
+\author{\textbf{CS 03} Hexagineers}
 
 
 
@@ -54,21 +55,23 @@
 \line(1,0){450}
 
 \begin{center}
-\textbf{\Huge Lorem Ipsum Dolor\\\Large Requirement Analysis}
 
+\Huge\textbf{Solid Waste Management System}\\
+\Large \textbf{Requirement Analysis Report}
 \end{center}
 \newpage
 \tableofcontents
 \newpage
 \section{Preface}
 \par The purpose of this document is to understand the key requirements of various stakeholders involved in this project work. To begin with, we rolled survey forms, conducted interviews and met the stake holders in order to understand the current scenario and their requirements. 
+\par This document was prepared and reviewed by all the group members.
 \newpage
 \section{Introduction}
-\par Lorem Ipsum Dolor is a project idea where we are trying to manage dry waste by collecting it from people and giving recycled, finished products back to the people. This is a concept we came up with where we believe that the goods could be efficiently recycled to give back to people various finished products available from the industries. 
-Apart from this, we also plan on providing know-how videos on how to reuse certain waste items available at home to make something productive.Thus, apart from benefitting the end users, the project also lays a step towards sorting out the big environment issue prevailing in India, i.e. lack of Effective Waste Management techniques.
+\par Solid Waste Management System is a project idea where we are trying to manage dry waste by collecting it from people and giving recycled, finished products back to the people. This is a concept we came up with where we believe that the goods could be efficiently recycled to give back to people various finished products available from the industries. 
+\par Apart from this, we also plan on providing know-how videos on how to reuse certain waste items available at home to make something productive.Thus, apart from benefitting the end users, the project also lays a step towards sorting out the big environment issue prevailing in India, i.e. lack of Effective Waste Management techniques.
 
 \section{Market Research}
-\par Lorem Ipsum Dolor is a pretty innovative concept. Although there are some companies which work in this field of dry waste management with similiar objective as ours. However, the domain of these companies are limited to just a specific type of dry waste.
+\par Solid Waste Management System is a pretty innovative concept. Although there are some companies which work in this field of dry waste management with similiar objective as ours. However, the domain of these companies are limited to just a specific type of dry waste.
 We, on the other hand, are working on recycling all kinds of dry waste that has high convertability. 
 
 \subsection{The Stakeholders}
@@ -83,8 +86,8 @@ We, on the other hand, are working on recycling all kinds of dry waste that has 
 \par To know the expectations from the stakeholders, we decided to conduct surveys for the direct stakeholders, i.e, the people, the kabadiwalas and the recycling industries.
 
 \subsubsection{People}
-\par  We circulated Google Forms to all our contacts via the social networks and asked them to fill the form and also to share them with their associates. The response was pretty good. We received 191 responses from diverse states, age groups and work backgrounds. Rolling out the form on github helped us to achieve the motto that our survey should comprise of sample that is evenly distributed rather than the result that we might have achieved in case the form was rolled on mails.The survey details are as follows:
- results.
+\par  We circulated Google Forms to all our contacts via the social networks and asked them to fill the form and also to share them with their associates. The response was pretty good. We received 191 responses from diverse states, age groups and work backgrounds. Rolling out form this way helped us to achieve the motto that our survey should comprise of sample that is evenly distributed. The survey details are as follows:
+ 
 \begin{itemize}
     \item Gender\\
     \includegraphics[scale=0.6]{Gender.png}
@@ -116,19 +119,21 @@ We, on the other hand, are working on recycling all kinds of dry waste that has 
     \item Would you be interested in earning points/credits through your dry waste for redemption on various e-commerce and payment platforms?\\
     \includegraphics[scale=0.6]{Points.png}
 \end{itemize}
-\par The survey results indicate that majority of the people are interested in this concept.Hence, it seems a good sign for our project. People are interested to exchange their solid waste in exchange for points, which they can redeem on the online e-commerce store.
+\par The survey results indicate that majority of the people are interested in this concept.Hence, it seems a good sign for our project. People are interested to exchange their solid waste in exchange for points, which they can redeem on our online e-commerce store for now. Redemption of points on other e-commerce websites will be introduced later on subject to feasibility.
 
 \subsubsection{Kabadiwalas}
-\par  In our visit to the Scrap dealers place at Pethapur, Gandhinagar, we gathered information regarding the various types of scrap that is collected by them and what they do to the collected scrap later on.
+\par Following is the first-hand summary of the interview after the team members talked to the respective stakeholder.
 
-\par Our first stop was at a Scrap dealer dealing with plastic items only. He would get the scrap from several small scrap collectors that collect scrap from homes. The scrap would then be segregated there. The recycling industries from Ahmedabad would collect the scrap from time to time via trucks.However, he did not have any major problem with the system he was dealing with and even hesitated to provide us any extra information regarding his revenues and turnover.
+\par \textit{ In our visit to the Scrap dealers place at Pethapur, Gandhinagar, we gathered information regarding the various types of scrap that is collected by them and what they do to the collected scrap later on.}
 
-\par The next scrap dealer we met dealt with the rubber scraps. He would mainly collect it from the Vehicle repair shops nearby. The scrap is sent to Ahmedabad based industries where the rubber is recycled to extract the oil from it. The average transaction is around 200-300kg/month.  
-\par Our next visit was to a scrap collector who himself collects from homes and sells the scrap to those in need. He doesn't give the collection to a bigger Scrap Dealer. During our conversation with the scrap dealers he told us that the problem that he faces is that he has no advanced idea as to where he would get the scrap from ? There are times when he finds difficult to collect waste items. So, he seemed very interested in our app idea and felt it would be actually easier to collect scrap via customer requests on mobile.This would prevent him extra labour work and ease in scrap collection. It would also save him time when he knows in advance the destination where he needs to go to collect scrap.
-\par Our final stop was a scrap dealer dealing with the glass products. His name was Jeruji. He generally collects the scrap from local shops and vendors for around Rs.1.5 - Rs.2 per bottle. He sells the scrap to both industries and retailers. He too felt good about the app idea and wished us luck in achieving our goals. His problems were similar to that addressed by the scrap dealer above.
+\par \textit{Our first stop was at a Scrap dealer dealing with plastic items only. He would get the scrap from several small scrap collectors that collect scrap from homes. The scrap would then be segregated there. The recycling industries from Ahmedabad would collect the scrap from time to time via trucks.However, he did not have any major problem with the system he was dealing with and even hesitated to provide us any extra information regarding his revenues and turnover.}
+
+\par \textit{The next scrap dealer we met dealt with the rubber scraps. He would mainly collect it from the Vehicle repair shops nearby. The scrap is sent to Ahmedabad based industries where the rubber is recycled to extract the oil from it. The average transaction is around 200-300kg/month. } 
+\par \textit{Our next visit was to a scrap collector who himself collects from homes and sells the scrap to those in need. He doesn't give the collection to a bigger Scrap Dealer. During our conversation with the scrap dealers he told us that the problem that he faces is that he has no idea in advance as to where he would get the scrap from ? There are times when he finds difficult to collect waste items. So, he seemed very interested in our app idea and felt it would be actually easier to collect scrap via customer requests on mobile.This would prevent him from doing extra labour work and ease his work in scrap collection. It would also save him time when he knows in advance the destination where he needs to go to collect scrap.}
+\par \textit{Our final stop was a scrap dealer dealing with the glass products. He generally collects the scrap from local shops and vendors for around Rs.1.5 - Rs.2 per bottle. He sells the scrap to both industries and retailers. However, sometimes due to less amount of scrap, the industires do not buy scrap from them. This leads to a situation where scrap lies around for a long time. He too felt good about the app idea and wished us luck in achieving our goals. His problems were similar to that addressed by the scrap dealer above.}
 
 \subsubsection{Recycling Industries}
-
+We are still under the process of interviewing the Recyling Industries.
 
 
 \section{Conclusion}
