@@ -1,0 +1,116 @@
+%Format: Latex
+\documentclass{article}
+\setcounter{secnumdepth}{5}
+\setlength{\textwidth}{17cm}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-1.5cm}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{times}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{tabulary}
+\usepackage{pgfgantt}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\usepackage{verbatim}
+\usetikzlibrary{arrows,shapes}
+\usepackage{adjustbox}
+\usepackage{forest}
+\usepackage{tikz-qtree}
+\usepackage{soul}
+\pagestyle{fancy}
+\rhead{CSE\hspace{\labelsep}\textbullet\hspace{\labelsep} Autumn 2017}
+\lhead{\textbf{CS302} Software Engineering}
+\cfoot{\thepage}
+\usepackage{indentfirst}
+ \usepackage{graphicx}
+\graphicspath{ {Images/} }
+\setcounter{tocdepth}{5} 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+}
+\title{\textbf{CS302}\\\HUGE Software Engineering\\
+\LARGE CSE\hspace{\labelsep}\textbullet\hspace{\labelsep} Autumn 2017
+}
+
+\author{\textbf{CS 03} Hexagineers}
+
+
+
+\begin{document}
+\maketitle
+\line(1,0){450}
+
+\begin{center}
+
+\Huge\textbf{Solid Waste Management System}\\
+\Large \textbf{Project Plan}
+\end{center}
+\newpage
+\tableofcontents
+\newpage
+\section{Deliverables Deadlines}
+\par The following table provides a brief description about the deadlines, tasks to be accomplished and the resultant deliverables.
+\begin{table}[h]
+\centering
+\caption{Project Plan}
+\label{my-label}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Period}} & \multicolumn{1}{c|}{\textbf{Topic}} & \multicolumn{1}{c|}{\textbf{Deliverables}} \\ \hline
+\multicolumn{1}{|c|}{\textbf{From}} & \multicolumn{1}{c|}{\textbf{To}} &  &  \\ \hline
+17/08 & 31/08 & Brainstorming period & Project Idea \\ \hline
+01/09 & 03/09 & Google Forms & Final Form for Survey of Customers \\ \hline
+03/09 & 15/09 & Google Form Data Collection & Analysing the requirements of customers \\ \hline
+12/09 & 12/09 & Survey of Scrap Dealers & Analysing the requirements of Scrap Dealers \\ \hline
+16/09 & 23/09 & No Activities due to exams &  \\ \hline
+24/09 & 10/10 & Survey of Industries & Analysing the requirements of Industries \\ \hline
+01/10 & 10/10 & Database Design & Tables required for Database Implementation \\ \hline
+01/10 & 08/10 & Prototype Design & \begin{tabular}[c]{@{}l@{}}A simple non-coded functioning app for \\ reviewing by Customers\end{tabular} \\ \hline
+09/10 & 15/10 & Prototype Design Review by Customers & \begin{tabular}[c]{@{}l@{}}A review on the changes that can be made to \\ design to improve user satisfaction\end{tabular} \\ \hline
+16/10 & 10/11 & Backend and Frontend Coding and Unit Testing & \begin{tabular}[c]{@{}l@{}}App for scrap dealers and a webapp of \\ an e-commerce store\end{tabular} \\ \hline
+11/11 & 15/11 & Testing & A app that has minimum bugs. \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Software Engineering Model}
+The software model which we plan on using is Prototype Model. The main aim of the model is to gather the requirements and then design, build a prototype, evaluate and redesign the product as per the stakeholder's requirements. 
+Considering the scope and scalability of our idea, it needs to go through a number of iterations of the prototype model in order to come up with a stable system, both technically and economically.
+  \begin{figure}[h!]
+        \centering
+        \includegraphics[scale=0.9]{Images/Prototype.jpg}
+        \caption[Caption for LOF]{Prototype Model Software Cycle\footnotemark}
+        \label{fig:my_label}
+    \end{figure}
+\footnotetext{Image taken from \href{http://ecomputernotes.com/software-engineering/explain-prototyping-model}{\textbf{Prototyping Model in Software Engineering}}}
+
+\section{Team Structure}
+The team structure followed is a blend of \textbf{Chief Programmer Team} and \textbf{Egoless team.}
+\par Structurally, we follow the chief programmer team structure with a chief programmer leading, reviewing and deciding the flow of work, and a librarian whose main job is to maintain the documentation.
+\par However, every member has the free will to work in any part of the project in addition to his assigned role. Everyone contributes and provide feedback, both positive and negative, to other team members. The views of every member are taken into consideration before taking any step related to the project.
+
+\par Mainly, for the design phase of the project, we have divided the team into two parts. First group, which handles the front end prototype design, consists of Akash Agrawal and Megana Ganpathiraju. And the second, those who handle the back end database design, has Madhukar Jaiswal and Anil Sharma. Apart from this, the documentation of the project will be handled by Tanmay Khandait and Vikesh Meena.
+
+\par For the coding phase, the team will be divided into two parts. The first team will focus on the front end development of the website.This team will comprise of Madhukar Jaiswal, Megana Ganpathiraju and Tanmay Khandait. The second team will focus upon the back end develpment of the project. This team will have Akash Agrawal, Anil Sharma and Vikesh Meena.
+\section{Team Rules}
+\begin{itemize}
+    \item Meet at least twice a week.
+    \item Use Trello as means to keep track of the status, updates, deadlines and any discussion of the project.
+    \item Use github as the means to create an online repository of the project codes and documentation and also to review the work without the need to meet physically.
+    \item Deliver the deliverable assigned, before the deadline.
+    \item In case of any queries or clarifications, please contact the team leader rather than making assumptions.
+    \item All the members are encouraged to update their blog links personally in order to track the development of the project.
+\end{itemize}
+\end{document}

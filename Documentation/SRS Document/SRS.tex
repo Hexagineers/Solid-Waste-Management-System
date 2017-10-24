@@ -1,0 +1,124 @@
+%Format: Latex
+\documentclass{article}
+\setcounter{secnumdepth}{5}
+\setlength{\textwidth}{17cm}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-1.5cm}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{times}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{tabulary}
+\usepackage{pgfgantt}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\usepackage{verbatim}
+\usetikzlibrary{arrows,shapes}
+\usepackage{adjustbox}
+\usepackage{forest}
+\usepackage{tikz-qtree}
+\usepackage{soul}
+\pagestyle{fancy}
+\rhead{CSE\hspace{\labelsep}\textbullet\hspace{\labelsep} Autumn 2017}
+\lhead{\textbf{CS302} Software Engineering}
+\cfoot{\thepage}
+\usepackage{indentfirst}
+ \usepackage{graphicx}
+\graphicspath{ {Images/} }
+\setcounter{tocdepth}{5} 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+}
+\title{\textbf{CS302}\\\HUGE Software Engineering\\
+\LARGE CSE\hspace{\labelsep}\textbullet\hspace{\labelsep} Autumn 2017
+}
+
+\author{\textbf{CS 03} Hexagineers}
+
+
+
+\begin{document}
+\maketitle
+\line(1,0){450}
+
+\begin{center}
+
+\Huge\textbf{Solid Waste Management System}\\
+\Large \textbf{SRS Document}
+\end{center}
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\subsection{Purpose}
+The purpose of this Software Requirements Specification(SRS) document is to provide a detailed description of the functionalities of the \textbf{Solid Waste Management System}. This document will cover each of the  system’s intended  features. The document will also cover hardware, software, and various other technical dependencies. 
+
+\subsection{Intended Audience} 
+\par This  document  is  intended  for  all the individuals  participating  in  and/or supervising  the  \textbf{Solid Waste Management System}. 
+This document provides a brief overview of each aspect of the project as a whole. 
+
+\subsection{Project Scope}
+\par The projects draws its inspiration from the motive to promote and enchance the recycling of dry waste and gain the profits by selling scrap and getting credits to buy the recycled products. Our software is composed of two main components: a web-app for users to buy products online and track their profiles, and an app for the \textit{kabadiwalas} to enable them with technology that will ease their work of collection of kabad from various households from various localities.
+\newpage
+
+\section{Overall Description}
+\subsection{Product Perspective}
+\par \textbf{Solid Waste Management System} is a new product intended for use on the web browsers. A web app for the kabadiwalas to enable them with the means to quickly reach households where solid waste is ready for disposal. The other will be an e-commerce web-store which will enable the customers to buy products and keep track of their activity and profiles.
+\subsection{Product Features}
+\par The core features of the projects are described below. 
+\begin{itemize}
+    \item \textbf{Credit-Based System}
+    \par All the customers who give away the solid waste would be given credits which they could redeem online.
+    These credits would also depend upon what kind of waste and how much amount of waste is given away. Items can be purchased through credits points, money or a combination of both.
+    \item \textbf{Sale of Recycled Items}
+    \par The e-commerce website would have a range of recycled goods like decorative pieces, sofas, leather items, fiber bags etc. Customers can choose what they like from this site.
+    
+    \item \textbf{DIY videos on Resuing}
+    \par This section will comprise of do-it-yourself videos on how to reuse various solid waste lying around the household to make something creative or useful. These videos can include guides on how to make recycled paper greeting cards, clocks, decorative items etc. This is to incentivize the people to inculcate the habit of \textbf{reusing} the waste. It would also help the people to gain a new skill.    
+    \item \textbf{Waste Pick-up}
+    \par The customers can request for pick-up of the dry waste at their own convenience. This will enable the customers to dispose off their wastes quicker in comparision to the conventional methods.
+    
+    \item \textbf{Special app for Kabadiwalas}
+    \par We will provide the kabadiwalas with a special app that will be easy to use. This app will notify when there is a customer who wants to dispose off his waste. Such technology will enable to work efficiently and go to only those places where there is a necessity.
+    
+    
+\end{itemize}
+\subsection{User Classes and Characteristics}
+\par The \textbf{Solid Waste Management System} is supposed to address the issue of solid waste management pan-India. We believe that the project will belong to the following classes\footnote{\textbf{Classification of Cities} by Government of India, Ministry of Finance, Department of Expenditure\\\href{http://www.finmin.nic.in/sites/default/files/21-07-2015_0.pdf}{Memorandum \textbf{No.2/5/2014-E.II(B)}}}:
+
+\begin{itemize}
+    \item \textbf{Tier 1 (X)}
+    \par Dry Waste Management is a burning issue in big, metro cities. The sole cause of this is because the population in a metro city is comparatively high. Waste generated in such cites are higher from both commercial and non-commercial sources.
+    
+    \item \textbf{Tier 2 (Y)}
+    \par The waste generated is comparatively lesser than Tier 1 (X) cities. This becomes the second class of cities. The success of project will depend upon the impact created in the Tier 1 cities.
+    
+    \item \textbf{Tier 3 (Z)}
+    \par These cities will be at the least focus since there will not be much business opportunity in the initial phase of the project. However, on a long term, the success in these cities will, again, depend upon the success of the idea in the higher tier cities.
+\end{itemize}
+\par These classification are not meant to separate public into different groups. However, this will be the flow in which the project will be made accessible to the public (from Tier 1 to Tier 3). 
+\par It  is  crucial  that  each  of  these  tiers  be  fully  supported  in  the  final  product  so  as  to maximize the overall value of the product. It is also important that the application be as user-friendly as possible, otherwise it will lack the impact which the product desires to create. Most importantly, the application must be reliable. Regardless of the situation, the application must accurately perform the functionality that were mentioned in the above section.  
+\subsection{Operating Environment}
+\par The main component of the project is the software application, which will be limited to the android platform-based app and web browsers. The application is not resource- or graphics-intensive, so there are no practical hardware constraints. The app(android and web app) will rely on  several  functionality. 
+ 
+\subsection{Design and Implementation Constraints}
+\par The primary design constraint is the mobile platform and the browser platform. Since the application is essentially designated for mobile  handsets, limited screen size and resolution will be a major design consideration. Creating a user interface  which is both effective and easily navigable will pose a difficult challenge. Since the project involves collection of actual waste, e-commerce platform to sell products on a large scale, each feature must be designed and implemented with efficiency in mind. 
+\subsection{Assumption and dependencies}
+\begin{itemize}{
+\item The kabadiwala should have access to smartphone and have a basic prior experience in using it.
+\item In interviews with various industries in Ahmedabad, their general view was in favor of the idea.
+}
+\end{document}

@@ -1,1 +1,1 @@
-This folder contains the prototype in pdf form as well as in HTML form.
+To view the prototype in action, download the whole directory and run frame.html.
