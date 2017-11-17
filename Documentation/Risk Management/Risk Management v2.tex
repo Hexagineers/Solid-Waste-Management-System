@@ -1,0 +1,288 @@
+%Format: Latex
+\documentclass{article}
+\setcounter{secnumdepth}{5}
+\setlength{\textwidth}{17cm}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-1.5cm}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{times}
+\usepackage{tikz}
+\usepackage{lscape}
+\usepackage{amsmath}
+\usepackage{tabulary}
+\usepackage{pgfgantt}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\usepackage{colortbl}
+\usepackage{verbatim}
+\usetikzlibrary{arrows,shapes}
+\usepackage{adjustbox}
+\usepackage{forest}
+\usepackage{tikz-qtree}
+\usepackage{soul}
+\pagestyle{fancy}
+\rhead{CSE\hspace{\labelsep}\textbullet\hspace{\labelsep} Autumn 2017}
+\lhead{\textbf{CS302} Software Engineering}
+\cfoot{\thepage}
+\usepackage{indentfirst}
+ \usepackage{graphicx}
+\graphicspath{ {Images/} }
+\setcounter{tocdepth}{5} 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+}
+\title{\textbf{CS302}\\\HUGE Software Engineering\\
+\LARGE CSE\hspace{\labelsep}\textbullet\hspace{\labelsep} Autumn 2017
+}
+
+\author{Hexagineers}
+
+
+
+\begin{document}
+\maketitle
+\line(1,0){450}
+
+\begin{center}
+\Huge\textbf{Solid Waste Management System}\\
+\Large \textbf{Risk Management Plan}
+
+\end{center}
+\newpage
+\tableofcontents
+\newpage
+\section{Introduction}
+\subsection{Purpose}
+A risk is an event or condition that, if it occurs, could have a positive or negative effect on a project’s objectives. Risk Management is the process of identifying, assessing, responding to, monitoring, and reporting risks. This Risk Management Plan defines how risks associated with this project will be identified, analyzed, and managed. It outlines how risk management activities will be performed, recorded, and monitored throughout the lifecycle of the project and provides templates and practices for recording and prioritizing risks.
+The Risk Management Plan monitored and updated throughout the project.  
+The intended audience of this document is the project team, project sponsor and management.
+
+\section{Risk Management Procedure}
+\subsection{Process}
+The project manager working with the project team and project sponsors will ensure that risks are actively identified, analyzed, and managed throughout the life of the project.  Risks will be identified as early as possible in the project so as to minimize their impact.  The steps for accomplishing this are outlined in the following sections.
+
+\subsection{Risk Identification}
+Risk identification will involve the project team, appropriate stakeholders, and will include an evaluation of environmental factors, organizational culture and the project management plan including the project scope.  Careful attention will be given to the project deliverables, assumptions, constraints and deadlines.
+
+\subsection{Risk Analysis}
+All risks identified will be assessed to identify the range of possible project outcomes.  Qualification will be used to determine which risks are the top risks to pursue and respond to and which risks can be ignored.
+
+\subsubsection{Qualitative Risk Analysis}
+The probability and impact of occurrence for each identified risk will be assessed by the team, with input from the team itself, along with the stakeholders by using the following approach:\\
+$Risk = Threat Likelihood \times Magnitude of Impact$
+\begin{itemize}
+    \item \textbf{Likelihood}
+    \begin{table}[h]
+\centering
+\begin{tabular}{|c|c|l|}
+\hline
+\textbf{Likelihood} & \textbf{\begin{tabular}[c]{@{}c@{}}Weight\\ (Approximate)\end{tabular}} & \multicolumn{1}{c|}{\textbf{Definition}}                                                                                                                                                                     \\ \hline
+Very High           & 5                                                                       & \begin{tabular}[c]{@{}l@{}}The threat-source is highly motivated and sufficiently capable, \\ and controls to prevent the vulnerability from being exercised\\ are ineffective.\end{tabular}                 \\ \cline{1-2}
+High                & 4                                                                       &                                                                                                                                                                                                              \\ \hline
+Medium              & 3                                                                       & \begin{tabular}[c]{@{}l@{}}The threat-source is motivated and capable, but controls are in\\ place that may impede successful exercise of the vulnerability.\end{tabular}                                    \\ \hline
+Low                 & 2                                                                       & \begin{tabular}[c]{@{}l@{}}The threat-source lacks motivation or capability, or controls are\\ in place to prevent, or at least significantly impede, the vulnerability\\ from being exercised.\end{tabular} \\ \cline{1-2}
+Very Low            & 1                                                                       &                                                                                                                                                                                                              \\ \hline
+\end{tabular}
+\end{table}
+\newpage
+    \item \textbf{Impact}
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|l|}
+\hline
+\textbf{Impact}                 & \textbf{\begin{tabular}[c]{@{}c@{}}Weight\\ (Approximate)\end{tabular}} & \multicolumn{1}{c|}{\textbf{Definition}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              \\ \hline
+\multicolumn{1}{|l|}{Very High} & 5                                                                       & \begin{tabular}[c]{@{}l@{}}The loss of confidentiality, integrity, or availability could be,expected to have a\\ severe or catastrophic adverse effect on,organizational operations,\\ organizational assets, or individuals.\end{tabular}                                                                                                                                                                                                                                                                                                                                                                                                            \\ \cline{1-2}
+High                            & 4                                                                       & \begin{tabular}[c]{@{}l@{}}\textbf{Examples}:\\ \textbullet\hspace{\labelsep}A severe degradation in or loss of,mission capability to an extent and\\ duration that the organization is,not able to perform one or more of\\ its primary functions.\\ \textbullet\hspace{\labelsep}Major damage to organizational assets. \\ \textbullet\hspace{\labelsep}Major financial loss.\\ \textbullet\hspace{\labelsep}Severe or catastrophic harm to individuals,involving loss of life\\ or serious life threatening injuries.\end{tabular}                                                                                                                                                                                                                                              \\ \hline
+Medium                          & 3                                                                       & \begin{tabular}[c]{@{}l@{}}The loss of confidentiality, integrity, or availability could be expected\\ to have a serious adverse effect on organizational operations, \\ organizational assets, or individuals.\\\textbf{Examples}:\\ \textbullet\hspace{\labelsep}Significant degradation in mission capability to an extent and duration\\ that the organization is able to perform its primary functions, but the\\ effectiveness of the functions is significantly reduced.\\ \textbullet\hspace{\labelsep}Significant damage to organizational assets.\\ \textbullet\hspace{\labelsep}Significant financial loss.\\ \textbullet\hspace{\labelsep}Significant harm to individuals that does not involve loss of life or \\ serious life threatening injuries.\end{tabular} \\ \hline
+Low                             & 2                                                                       & \begin{tabular}[c]{@{}l@{}}The loss of confidentiality, integrity, or availability could be,expected\\ to have a limited adverse effect on organizational,operations,\\ organizational assets, or individuals.\end{tabular}                                                                                                                                                                                                                                                                                                                                                                                                                           \\ \cline{1-2}
+\multicolumn{1}{|l|}{Very Low}  & 1                                                                       & \begin{tabular}[c]{@{}l@{}}\textbf{Examples}:\\ \textbullet\hspace{\labelsep}Degradation in mission,capability to an extent and duration that\\ the organization is able,to perform its primary functions, but the\\ effectiveness of the,functions is noticeably reduced.\\ \textbullet\hspace{\labelsep}Minor,damage to organizational assets.\\ \textbullet\hspace{\labelsep}Minor,financial loss.\\ \textbullet\hspace{\labelsep}Minor harm to,individuals.\end{tabular}                                                                                                                                                                                                                                                                                                       \\ \hline
+\end{tabular}
+\end{table}
+\item \textbf{Impact v/s Likelihood}\\
+Risks that fall within the RED and YELLOW zones will have risk response planning which may include both a risk mitigation and a risk contingency plan.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\multirow{7}{*}{\textbf{Impact}} & \multicolumn{1}{l|}{\textbf{VH}} & \cellcolor{yellow}5           & \cellcolor{yellow}10         & \cellcolor{red}15         & \cellcolor{red}20         &\cellcolor{red} 25          \\ \cline{2-7} 
+                                 & \textbf{H}                       & \cellcolor{green}4           & \cellcolor{yellow}8          & \cellcolor{yellow}12         & \cellcolor{red}16         & \cellcolor{red}20          \\ \cline{2-7} 
+                                 & \textbf{M}                       & \cellcolor{green}3           & \cellcolor{yellow}6          & \cellcolor{yellow}9          &\cellcolor{yellow} 12         & \cellcolor{red}15          \\ \cline{2-7} 
+                                 & \textbf{L}                       & \cellcolor{green}2           &\cellcolor{green} 4          &\cellcolor{yellow} 6          & \cellcolor{yellow}8          & \cellcolor{yellow}10          \\ \cline{2-7} 
+                                 & \multicolumn{1}{l|}{\textbf{VL}} &\cellcolor{green} 1           &\cellcolor{green} 2          &\cellcolor{green} 3          & \cellcolor{green}4          & \cellcolor{yellow}5           \\ \cline{2-7} 
+                                 &                                  & \textbf{VL} & \textbf{L} & \textbf{M} & \textbf{H} & \textbf{VH} \\ \cline{2-7} 
+                                 & \multicolumn{6}{c|}{\textbf{Probability}}                                                           \\ \hline
+\end{tabular}
+\end{table}
+\end{itemize}
+\subsubsection{Quantitative Risk Analysis}
+Analysis of risk events that have been figured out using the qualitative risk analysis process and their affect on project activities will be guessed. A numerical rating will then be applied to each risk based on this analysis, and then documented in this section of the risk management plan.
+
+\subsection{Risk Response Planning}
+Each major risk (those falling in the Red & Yellow zones) will be assigned to a project team member for monitoring purposes to ensure that the risk will not “fall through the cracks”.  
+For each major risk, one of the following approaches will be selected to address it:
+\begin{itemize}
+    \item \textbf{Avoid} – eliminate the threat by eliminating the cause
+    \item \textbf{Mitigate} – Identify ways to reduce the probability or the impact of the risk
+    \item \textbf{Accept} – Nothing will be done 
+    \item \textbf{Transfer} – Make another party responsible for the risk (buy insurance, outsourcing, etc.)
+\end{itemize}
+
+For each risk that will be mitigated, the project team will identify ways to prevent the risk from occurring or reduce its impact or probability of occurring.  This may include prototyping, adding tasks to the project schedule, adding resources, etc.
+For each major risk that is to be mitigated or that is accepted, a course of action will be outlined for the event that the risk gets managed in order to minimize its impact.
+\subsection{Risk Monitoring, Controlling and Reporting}
+The level of risk on a project will be tracked, monitored and reported throughout the project life-cycle.  
+
+\section{Classification and Analysis of Risks}
+\subsection{Software Business Risks}
+\begin{itemize}
+    \item Lack of project standard/quality.
+    \item \textbf{Designed product is not in line with the desired product}
+    \item \textbf{Product is tough to use (in terms of UI, UX)}
+    \item \textbf{Product is tough to sell}
+    \item \textbf{Stakeholders back off}
+    \item \textbf{Failure to provide good customer experience}
+    \item Failure of project.
+\end{itemize}
+
+\newpage
+
+\null\vspace{\fill}
+\centering \subsection{Software Requirement Risks}
+\vspace{\fill}
+\newpage
+
+\begin{landscape}
+\begin{table}[h]
+\centering
+\caption{Software Requirement Risks}
+\label{Software Requirement Risks}
+\begin{tabular}{|c|l|l|c|c|c|l|}
+\hline
+\textbf{Item No.} & \multicolumn{1}{c|}{\textbf{Risk}}                                          & \multicolumn{1}{c|}{\textbf{Risk Definition}}                                                                                                                                                                                        & \textbf{Likelihood} & \textbf{Impact} & \textbf{Risk Rating} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Plan\\ (Avoid, Mitigate, Accept, Transfer)\end{tabular}}}                                                                                                                                                                                                                          \\ \hline
+1                 & \begin{tabular}[c]{@{}l@{}}Poor definition\\  of requirements\end{tabular}  & \begin{tabular}[c]{@{}l@{}}The requirements of the project \\ are not defined clearly. This might\\ happen due to poor communication\\ between client/stakeholder(s) and \\ team.\end{tabular}                                       & 2                   & 3               & \cellcolor{yellow}6                    & \begin{tabular}[c]{@{}l@{}}Going back to the requirements phase and\\ clearly defining and documenting all the \\ needs of the client/stakeholder(s).\end{tabular}                                                                                                                                                                        \\ \hline
+2                 & \begin{tabular}[c]{@{}l@{}}Lack of analysis \\ of requirements\end{tabular} & \begin{tabular}[c]{@{}l@{}}The requirements are not analysed.\\ This might be due to a poor feasibility \\ study. Also, irrelevant and/or\\ unnecessary surveys, interviews etc.\end{tabular}                                        & 1                   & 2               & \cellcolor{green}2                    & \begin{tabular}[c]{@{}l@{}}Doing ground research(surveys, interviews\\ etc.) in order to list down the feasibility of\\ the project and clearly analyse every aspect of \\ the project.\end{tabular}                                                                                                                                      \\ \hline
+3                 & \begin{tabular}[c]{@{}l@{}}Changes in \\ requirements\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Addition/Modifications in\\ requirements of the project due\\ to either client/stakeholder(s) \\ needs or project\\ completion needs.\end{tabular}                                                        & 2                   & 2               & \cellcolor{green}4                    & \begin{tabular}[c]{@{}l@{}}Feasibility and analysis of the \\ added/modified requirements. It\\ is essential to communicate all\\ the feasible and infeasible aspects \\ to the client/stakeholder(s).\end{tabular}                                                                                                                       \\ \hline
+\end{tabular}
+\end{table}
+\end{landscape}
+
+\newpage
+
+\null\vspace{\fill}
+\centering \subsection{Software Cost Risks}
+\vspace{\fill}
+\newpage
+\begin{landscape}
+% Please add the following required packages to your document preamble:
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+% Please add the following required packages to your document preamble:
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+\begin{table}
+\centering
+\caption{Software Cost Risks}
+\label{Software Cost Risks}
+\begin{tabular}{|c|l|l|l|l|l|l|}
+\hline
+\textbf{Item No.} & \multicolumn{1}{c|}{\textbf{Risk}}                                                 & \multicolumn{1}{c|}{\textbf{Risk Definition}}                                                                                                                                                                                                          & \multicolumn{1}{c|}{\textbf{Likelihood}} & \multicolumn{1}{c|}{\textbf{Impact}} & \multicolumn{1}{c|}{\textbf{Risk Rating}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Plan\\ (Avoid, Mitigate, Accept, Transfer)\end{tabular}}}                                                                                                                                                                                                                         \\ \hline
+1                 & \begin{tabular}[c]{@{}l@{}}Lack of \\ good estimates\end{tabular}                  & \begin{tabular}[c]{@{}l@{}}Estimates(financial cost, \\ project time, resources etc.) \\ made are baseless or \\ ambiguous. This might occur \\ due to lack of experience.\end{tabular}                                                                & \multicolumn{1}{c|}{3}                    & \multicolumn{1}{c|}{4}                & \multicolumn{1}{c|}{\cellcolor{yellow}12}                     & \begin{tabular}[c]{@{}l@{}}Making realistic estimates and \\ seeking any external help, if \\ necessary. \\ Make sure that all the needed \\ resources are available and any \\ shortage is conveyed to the \\ management team.\end{tabular}                                                                                             \\ \hline
+2                 & \begin{tabular}[c]{@{}l@{}}Unrealistic \\ schedule\end{tabular}                    & \begin{tabular}[c]{@{}l@{}}A lot is being tried to be done \\ within a limited time frame or \\ the time frame of the project is \\ unrealistic. This may be caused \\ due to lack of experience, \\ unexpected crisis situations \\ etc.\end{tabular} & \multicolumn{1}{c|}{2}                    & \multicolumn{1}{c|}{5}                & \multicolumn{1}{c|}{\cellcolor{yellow}10}                     & \begin{tabular}[c]{@{}l@{}}Unrealistic schedule can be avoided \\ by first judging the capabilities and \\ experience of each member and then \\ estimating time schedules as per the \\ phase complexity. Timely monitoring \\ and analysis of the deadlines met and \\ deadlines missed.\end{tabular}                                  \\ \hline
+3                 & \begin{tabular}[c]{@{}l@{}}Human \\ Errors\end{tabular}                            & \begin{tabular}[c]{@{}l@{}}Human errors include making \\ assumptions, coding errors, \\ deletion of code etc.\end{tabular}                                                                                                                            & \multicolumn{1}{c|}{}                    & \multicolumn{1}{c|}{}                & \multicolumn{1}{c|}{}                     & \multicolumn{1}{c|}{}                                                                                                                                                                                                                                                                                                                    \\ \hline
+3.1               &                                                                                    & Coding errors                                                                                                                                                                                                                                          & \multicolumn{1}{c|}{3}                    & \multicolumn{1}{c|}{4}                & \multicolumn{1}{c|}{\cellcolor{yellow}12}                     & \begin{tabular}[c]{@{}l@{}}Simultaneous testing and \\ reviewing of code to avoid this. In \\ case the unit testing succeeds and \\ integration testing fails, go back to \\ reviewing all codes and finding \\ errors.\end{tabular}                                                                                                     \\ \hline
+3.2               &                                                                                    & \begin{tabular}[c]{@{}l@{}}Modification/Deletion of code \\ (due to any reason)\end{tabular}                                                                                                                                                           & \multicolumn{1}{c|}{1}                    & \multicolumn{1}{c|}{3}                & \multicolumn{1}{c|}{\cellcolor{green}3}                     & \begin{tabular}[c]{@{}l@{}}Create backup of the code and \\ related documents and tools on \\ both offline and online platforms.\end{tabular}                                                                                                                                                                                            \\ \hline
+4                 & \begin{tabular}[c]{@{}l@{}}Lack of \\ monitoring\end{tabular}                      & \begin{tabular}[c]{@{}l@{}}Lack of monitoring the progress, \\ reviews etc.\end{tabular}                                                                                                                                                               & \multicolumn{1}{c|}{2}                    & \multicolumn{1}{c|}{4}                & \multicolumn{1}{c|}{\cellcolor{yellow}8}                     & \begin{tabular}[c]{@{}l@{}}The project leader should take the \\ responsibility of doing a timely \\ progress check and review, \\ analyse and feedback all the work \\ done.\end{tabular}                                                                                                                                               \\ \hline
+
+\end{tabular}
+\end{table}
+
+\newpage
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+\begin{table}[]
+\centering
+\caption{Software Cost Risks}
+\label{Software Cost Risks}
+\begin{tabular}{|c|l|l|l|l|l|l|}
+\hline
+\textbf{Item No.} & \multicolumn{1}{c|}{\textbf{Risk}}                                                 & \multicolumn{1}{c|}{\textbf{Risk Definition}}                                                                                                                                                                                        & \multicolumn{1}{c|}{\textbf{Likelihood}} & \multicolumn{1}{c|}{\textbf{Impact}} & \multicolumn{1}{c|}{\textbf{Risk Rating}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Plan\\ (Avoid, Mitigate, Accept, Transfer)\end{tabular}}}                                                                                                                                                  \\ \hline                                                                      
+5                 & \begin{tabular}[c]{@{}l@{}}Lack of \\ testing\end{tabular}                         & \begin{tabular}[c]{@{}l@{}}Due to unrealistic \\ schedule/deadlines, the testing \\ might be neglected/ignored.  \\ This will result in an unfinished \\ product that will not meet the \\ client/stakeholder(s) needs.\end{tabular} & \multicolumn{1}{c|}{3}                    & \multicolumn{1}{c|}{4}                & \multicolumn{1}{c|}{\cellcolor{yellow}12}                     & \begin{tabular}[c]{@{}l@{}}Making project schedules and \\ ensure that they are being \\ followed. In case of failure to meet \\ the deadlines, the reason must be \\ analysed and work should be \\ either divided and finished\end{tabular}                     \\ \hline
+6                 & \begin{tabular}[c]{@{}l@{}}Complexity \\ of Software\end{tabular}                  & \begin{tabular}[c]{@{}l@{}}The complexity of the software \\ turns out to be much difficult \\ that expected. This could be due \\ to lack of knowledge, skill or \\ lack of resources.\end{tabular}                                 &     \multicolumn{1}{c|}{3}                                      & \multicolumn{1}{c|}{3}                                    &   \multicolumn{1}{c|}{\cellcolor{yellow}9}                                         & \begin{tabular}[c]{@{}l@{}}Analysing the system requirement \\ and zeroing down a particular set \\ of tools. Tools used should only be \\ changed in case the new tool is \\ very useful and impacts the project \\ costs drastically.\end{tabular}              \\ \hline
+7                 & \begin{tabular}[c]{@{}l@{}}Failures of \\ tools\\ (dependencies)\end{tabular}      & \begin{tabular}[c]{@{}l@{}}The dependencies of the product \\ fail due to some unexpected \\ reasons.\end{tabular}                                                                                                                   &          \multicolumn{1}{c|}{3}                                 &         \multicolumn{1}{c|}{5}                              &    \multicolumn{1}{c|}{\cellcolor{yellow}15}                                        & \begin{tabular}[c]{@{}l@{}}Analysis the system requirements \\ and zeroing down a set of tools \\ that can be used in case of failure \\ of the first one.\end{tabular}                                                                                           \\ \hline
+8                 & \begin{tabular}[c]{@{}l@{}}Disagreement \\ between \\ members\end{tabular}         & \begin{tabular}[c]{@{}l@{}}Disagreement and/or conflict \\ between members regarding any \\ technical and/or non technical \\ issue.\end{tabular}                                                                                    &     \multicolumn{1}{c|}{2}                                      &    \multicolumn{1}{c|}{3}                                   &                          \multicolumn{1}{c|}{\cellcolor{yellow}6}                  & \begin{tabular}[c]{@{}l@{}}Team leader must ensure that \\ disputes are solved and dusted\\  instantaneously. If not, the team \\ leader must ensure that the work \\ is divided in such a way that it \\ does no impact the costs of the project.\end{tabular}   \\ \hline
+9                & \begin{tabular}[c]{@{}l@{}}Disagreement \\ between client \\ and team\end{tabular} & \begin{tabular}[c]{@{}l@{}}Disagreement and/or conflict \\ between team and client \\ regarding prototype made, \\ schedules not followed etc. \\ Client can choose to evoke \\ team from the project.\end{tabular}                  &     \multicolumn{1}{c|}{2}                                      &        \multicolumn{1}{c|}{4}                               &               \multicolumn{1}{c|}{\cellcolor{yellow}8}                             & \begin{tabular}[c]{@{}l@{}}Accept the risk. The team must ask for \\ valid reason and provide the client \\ with the necessary deliverable.\end{tabular}                                                                                                          \\ \hline
+
+\end{tabular}
+\end{table}
+\newpage
+% Please add the following required packages to your document preamble:
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+\begin{table}[h]
+\caption{Software Cost Risks}
+\label{Software Cost Risks}
+\begin{tabular}{|c|l|l|l|l|l|l|}
+\hline
+\textbf{Item No.} & \multicolumn{1}{c|}{\textbf{Risk}}                                                 & \multicolumn{1}{c|}{\textbf{Risk Definition}}                                                                                                                                                                       & \multicolumn{1}{c|}{\textbf{Likelihood}} & \multicolumn{1}{c|}{\textbf{Impact}} & \multicolumn{1}{c|}{\textbf{Risk Rating}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Plan\\ (Avoid, Mitigate, Accept, Transfer)\end{tabular}}}                                                                                                                                                  \\ \hline
+10                & \begin{tabular}[c]{@{}l@{}}Technology \\ Change\end{tabular}                       & \begin{tabular}[c]{@{}l@{}}Introduction of new \\ technology in the market \\ and its usefulness to the \\ software/product being \\ created.\end{tabular}                                                          &             \multicolumn{1}{c|}{1}                              &       \multicolumn{1}{c|}{4}                                &    \multicolumn{1}{c|}{\cellcolor{green}4}                                        & \begin{tabular}[c]{@{}l@{}}Analysing the system requirement and \\ zeroing down a particular set of tools. \\ Tools used should only be changed in \\ case the new tool is very useful and \\ impacts the project costs drastically.\end{tabular}                 \\ \hline
+11                & \begin{tabular}[c]{@{}l@{}}Shortage of \\ personnel\end{tabular}                   & \begin{tabular}[c]{@{}l@{}}Shortage of personnel due \\ to lack of scheduling \\ estimates or higher \\ complexity.\\ Withdrawal/removal of \\ any team member due \\ to any reason.\end{tabular}                   &       \multicolumn{1}{c|}{4}                                    &     \multicolumn{1}{c|}{4}                                  &           \multicolumn{1}{c|}{\cellcolor{red}16}                                 & \begin{tabular}[c]{@{}l@{}}Hiring of new personnels who are skilled \\ for the project. In case that is not an \\ option, the team leader must ensure that \\ work is being distributed equitably and \\ that it is done cohesively and dedicatedly.\end{tabular} \\ \hline
+12                & \begin{tabular}[c]{@{}l@{}}Working space/\\ Environment Change\end{tabular}        & \begin{tabular}[c]{@{}l@{}}Change in working \\ environment of the \\ team.\end{tabular}                                                                                                                            &            \multicolumn{1}{c|}{1}                               &    \multicolumn{1}{c|}{4}                                   &  \multicolumn{1}{c|}{\cellcolor{green}4}                                          & \begin{tabular}[c]{@{}l@{}}The team has to accept and adapt to the \\ new working environment.\end{tabular}                                                                                                                                                       \\ \hline
+\multicolumn{1}{|c|}{13}                & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Inadequate \\ Budget\end{tabular}}                       & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}The budget is \\ inadequate in order to \\ acquire new resources.\end{tabular}}                                                                                                                                              & \multicolumn{1}{c|}{4}                   & \multicolumn{1}{c|}{3}               & \multicolumn{1}{c|}{\cellcolor{yellow}12}                   & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}A proper analysis of the required \\ resources and a phase wise budget\\  allocation should be done. This will ensure\\  that the project is being carried out\\  smoothly. In case there happens to \\ be a shortage  of budget, the plan \\ should be to accept the cost \\ and either find a consecutive phase funding \\ or find roundabouts in order to achieve \\ the desired results.\end{tabular}} \\ \hline
+14                & \begin{tabular}[c]{@{}l@{}}Inadequate knowledge \\ about tools and\\ techniques\end{tabular} & \begin{tabular}[c]{@{}l@{}}Although the team \\ members know how to \\ use/build a tool, they \\ lack adequate knowledge \\which is required to \\ build the software \\ more professionally.\end{tabular}                                               & \multicolumn{1}{c|}{3}                    & \multicolumn{1}{c|}{3}                & \multicolumn{1}{c|}{\cellcolor{yellow}9}                     & \begin{tabular}[c]{@{}l@{}}The team leader should assess and \\ allocate and decide the time and \\ schedules, respectively, so that \\ training of the team member \\ and meeting of deadlines \\ take place.\end{tabular}                                                                                                                                                                                                          \\ \hline
+\end{tabular}
+\end{table}
+\end{landscape}
+
+\newpage
+
+\null\vspace{\fill}
+\centering \subsection{Software Business Risks}
+\vspace{\fill}
+\newpage
+\begin{landscape}
+\begin{table}[h]
+\centering
+\caption{Software Business Risks}
+\label{Software Business Risks}
+\begin{tabular}{|c|l|l|c|c|c|l|}
+\hline
+\textbf{Item No.} & \multicolumn{1}{c|}{\textbf{Risk}}                                                                     & \multicolumn{1}{c|}{\textbf{Risk Definition}}                                                                                  & \textbf{Likelihood} & \textbf{Impact} & \textbf{Risk Rating} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Plan\\ (Avoid, Mitigate, Accept, Transfer)\end{tabular}}}                                                                                                                                                                                                                                                                              \\ \hline
+1                 & \begin{tabular}[c]{@{}l@{}}Lack of project \\ standard/quality\end{tabular}                            &                                                                                                                                & 2                   & 5               & \cellcolor{green}10                   &                                                                                                                                                                                                                                                                                                                                                                                               \\ \hline
+2                 & \begin{tabular}[c]{@{}l@{}}Designed product \\ is not in line with \\ the desired product\end{tabular} & \begin{tabular}[c]{@{}l@{}}The product is not \\ as per requirements.\end{tabular}                                             & 2                   & 5               & \cellcolor{green}10                   & \begin{tabular}[c]{@{}l@{}}Make sure that developers \\ stick to the design planned.\\ Focus on design phase in the \\ next iteration phase. The \\ protoyping SDLC allows for \\ modifications as per stakeholder \\ needs.\end{tabular}                                                                                                                                                     \\ \hline
+3                 & \begin{tabular}[c]{@{}l@{}}Product is tough to \\ use (in terms of UI/UX)\end{tabular}                 & \begin{tabular}[c]{@{}l@{}}The product developed \\ has a complex user \\ interface and/or bad \\ user experience\end{tabular} & 3                   & 5               & \cellcolor{red}15                   & \begin{tabular}[c]{@{}l@{}}Make sure that developers \\ stick to the design planned.\\ Focus on design phase in the\\  next iteration phase. The \\ protoyping SDLC allows for \\ modifications as per stakeholder \\ needs.\end{tabular}                                                                                                                                                     \\ \hline
+4                 & \begin{tabular}[c]{@{}l@{}}Product is tough to\\  sell\end{tabular}                                    &                                                                                                                                & 3                   & 5               & \cellcolor{red}15                   & \begin{tabular}[c]{@{}l@{}}Create a marketing action plan. \\ Also, focus on the advertising \\ in the cities where the first tier \\ launch will happen.\end{tabular}                                                                                                                                                                                                                        \\ \hline
+5                 & Stakeholders back off                                                                                  & \begin{tabular}[c]{@{}l@{}}Stakeholders back off \\ from accepting the \\ product (due to \\ any reason)\end{tabular}          &                     &                 &                      &                                                                                                                                                                                                                                                                                                                                                                                               \\ \cline{1-2} \cline{4-7} 
+5.1               & Customers back off                                                                                     &                                                                                                                                & 3                   & 5               & \cellcolor{red}15                   & \begin{tabular}[c]{@{}l@{}}The plan is to accept this cost \\ and develop the the prototype \\ keeping in mind the need of \\ the stakeholders. This might \\ require going back to requirement \\ phase where the customer's \\ needs are clearly defined.\end{tabular}                                                                                                                      \\ \cline{1-2} \cline{4-7} 
+5.2               & Kabadiwalas back off                                                                                   &                                                                                                                                & 3                   & 5               & \cellcolor{red}15                   & \begin{tabular}[c]{@{}l@{}}The plan is to accept this cost \\ and develop the the prototype \\ keeping in mind the need of \\ the stakeholders. This might \\ require going back to requirement \\ phase where the kabadiwala's \\ needs are clearly defined.\end{tabular}                                                                                                                   \\ \hline
+\end{tabular}
+\end{table}
+\newpage
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{|c|l|l|c|c|c|l|}
+\hline
+\textbf{Item No.} & \multicolumn{1}{c|}{\textbf{Risk}}                                                                     & \multicolumn{1}{c|}{\textbf{Risk Definition}}                                                                                  & \textbf{Likelihood} & \textbf{Impact} & \textbf{Risk Rating} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Plan\\ (Avoid, Mitigate, Accept, Transfer)\end{tabular}}}                                                                                                                                                                                                                                                                              \\ \hline
+5.3               & \begin{tabular}[c]{@{}l@{}}Recycling Industries \\ back off\end{tabular}                               &                                                                                                                                & 2                   & 5               & \cellcolor{yellow}10                   & \begin{tabular}[c]{@{}l@{}}The plan is to accept this cost \\ and develop the the prototype \\ keeping in mind the need of \\ the stakeholders. This might \\ require going back to requirement \\ phase where the industries' \\ needs are clearly defined. There \\ might also exist a case where we \\ would need to talk to new industries \\ who could collaborate with us.\end{tabular} \\ \hline
+6                 & \begin{tabular}[c]{@{}l@{}}Failure to provide good\\ customer experience\end{tabular}                  &                                                                                                                                & 4                   & 5               & \cellcolor{red}20                   &                                                                                                                                                                                                                                                                                                                                                                                               \\ \hline
+7                 & Failure of project                                                                                     &                                                                                                                                & 3                   & 5               & \cellcolor{red}15                   &                                                                                                                                                                                                                                                                                                                                                                                               \\ \hline
+\end{tabular}
+\end{table}
+\end{landscape}
+\end{document}
