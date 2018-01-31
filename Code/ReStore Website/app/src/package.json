@@ -1,13 +1,15 @@
 {
-  "name": "quickstart-docker-express-example",
+  "name": "restore-ecommerce-website",
   "version": "1.0.0",
-  "description": "Demo to show git push build and deploy",
+  "description": "Webapp to promote selling of recycled products",
   "scripts": {
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Hexagineers",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.16.2",
+	"xmlhttprequest": "^1.8.0",
+	"body-parser": "1.18.2"
   }
 }
