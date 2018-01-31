@@ -1,1 +1,0 @@
-Javascript files of pages go in this directory.

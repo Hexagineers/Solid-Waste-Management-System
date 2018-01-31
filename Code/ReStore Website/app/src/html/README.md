@@ -1,1 +1,0 @@
-HTML files of pages go in this directory.

@@ -1,0 +1,23 @@
+.dropdown-menu{
+	right: 4px;
+    left: auto;
+  width:100%;
+}
+#section3 form{
+  border: 2px solid blue;
+  max-width: 60%;
+  margin: 0 auto;
+  border-radius:15px;
+  padding-right:0;
+  background-color: #FFFF99;
+  color:Brown;
+}
+#section3 .container h1,p{
+  text-align: center;
+}
+#section3 .container h1{
+  padding-top: 2%;
+}
+.top{
+	float:right;
+}

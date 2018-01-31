@@ -1,0 +1,34 @@
+#b a{
+  text-decoration:none;
+}
+.carousel-caption{
+  text-align: center;
+}
+.carousel-caption > h2{
+  color:Green;
+}
+.carousel-caption > h3{
+  color:Yellow;
+}
+.item img{
+  width: 100%;
+  max-height: 700px;
+  z-index: -1;
+}
+#section4 .container-fluid h1,p{
+  text-align: center;
+}
+#section4 .container-fluid h1{
+  color:Gray;
+}
+.carousel-indicators{
+  z-index: 1 !important;
+}
+.dropdown-menu{
+	right: 4px;
+    left: auto;
+  width:100%;
+}
+.top{
+	float:right;
+}

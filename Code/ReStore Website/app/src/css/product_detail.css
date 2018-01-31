@@ -1,0 +1,70 @@
+.dropdown-menu{
+  right: 4px;
+    left: auto;
+  width:100%;
+}
+.carousel-caption{
+  text-align: center;
+}
+.carousel-caption > h2{
+  color:Green;
+}
+.carousel-caption > h3{
+  color:Yellow;
+}
+.item img{
+  width: 100%;
+  max-height: 700px;
+  z-index: -1;
+}
+#section4 .container-fluid h1,p{
+  text-align: center;
+}
+#section4 .container-fluid h1{
+  color:Gray;
+}
+#section5 footer{
+    bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+.carousel-indicators{
+  z-index: 1 !important;
+}
+.item{
+	background-color: grey;
+}
+.pic{
+	width: 33% ;
+    margin-left: 2%;
+    margin-top: 2%;
+    float: left;
+}
+.pager{
+  text-align: left;
+  margin-left: 2%;
+  float: left;
+}
+.details{
+	width: 50%;
+	float:right;
+}
+.cart{
+	text-indent : 60px;
+}
+.but{
+    background-color: #4CAF50;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 2px;
+    cursor: pointer;
+}
+.top{
+  float:right;
+}
